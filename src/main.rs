@@ -5,7 +5,7 @@ use tracing::info;
 use utoipa::OpenApi;
 use utoipa_scalar::{Scalar, Servable as _};
 
-const ADDR: &str = "0.0.0.0:9191";
+const ADDR: &str = "0.0.0.0:9192";
 
 #[derive(OpenApi)]
 #[openapi(paths(pong))]
