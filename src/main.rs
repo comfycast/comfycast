@@ -19,10 +19,7 @@ async fn openapi() -> Json<utoipa::openapi::OpenApi> {
 async fn main() -> Result<()> {
     tracing_subscriber::fmt::init();
 
-    let app = Router::new()
-        .route("/api/v1/openapi.json", get(openapi))
-        .merge(Scalar::with_url("/api", ApiDoc::openapi()))
-        .route("/api/v1/ping", get(pong));
+    let app = Router::new().nest("/api", api_router());
 
     info!("Started server at \"{ADDR}\"");
     let listener = TcpListener::bind(ADDR).await?;
@@ -31,13 +28,14 @@ async fn main() -> Result<()> {
     Ok(())
 }
 
-#[utoipa::path(
-    get,
-    path = "/api/v1/ping",
-    responses(
-        (status = 200, description = "Returns pong")
-    )
-)]
+fn api_router() -> Router {
+    Router::new()
+        .merge(Scalar::with_url("/", ApiDoc::openapi()))
+        .route("/openapi.json", get(openapi))
+        .route("/ping", get(pong))
+}
+
+#[utoipa::path(get, path = "/api/ping")]
 async fn pong() -> &'static str {
     "pong"
 }
