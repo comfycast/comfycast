@@ -1,5 +1,5 @@
 ---
-
+import Player from "../components/Player";
 ---
 
 <html lang="en">
@@ -9,7 +9,9 @@
     <meta name="viewport" content="width=device-width" />
     <title>Astro</title>
   </head>
-  <body>
-    <h1>Astro</h1>
+  <body class="h-screen w-screen">
+    <main class="w-full">
+      <Player client:load/>
+    </main>
   </body>
 </html>
