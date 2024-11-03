@@ -8,15 +8,14 @@ import {
   createEffect,
 } from "solid-js";
 import HLS from "hls.js";
+import ky from "ky";
 
 interface StreamResponse {
   url: string;
 }
 
-const fetchStream = async (id: string): Promise<StreamResponse> => {
-  const response = await fetch(`http://localhost:8008/stream/${id}`);
-  return response.json();
-};
+const fetchStream = async (id: string): Promise<StreamResponse> =>
+  ky(`http://localhost:8008/stream/${id}`).json();
 
 const VideoPlayer: Component<{ id: string }> = (props) => {
   const [stream] = createResource(props.id, fetchStream);
