@@ -8,7 +8,6 @@
       "@layouts/*": ["src/layouts/*"]
     },
     "jsx": "preserve",
-    "jsxImportSource": "solid-js",
-    "types": ["vidstack/solid"]
+    "jsxImportSource": "solid-js"
   }
 }

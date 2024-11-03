@@ -4,5 +4,5 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [require("vidstack/tailwind.cjs")({ webComponents: true })],
+  plugins: [],
 };
