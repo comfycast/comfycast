@@ -6,5 +6,5 @@ const { id } = Astro.params;
 ---
 
 <Base>
-  <Player id={id || ""} />
+  <Player id={id || ""} client:load />
 </Base>

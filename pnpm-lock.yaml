@@ -20,6 +20,9 @@ importers:
       astro:
         specifier: ^4.16.8
         version: 4.16.8(rollup@4.24.3)(typescript@5.6.3)
+      hls.js:
+        specifier: ^1.5.17
+        version: 1.5.17
       solid-js:
         specifier: ^1.9.3
         version: 1.9.3
@@ -1106,6 +1109,9 @@ packages:
 
   hastscript@8.0.0:
     resolution: {integrity: sha512-dMOtzCEd3ABUeSIISmrETiKuyydk1w0pa+gE/uormcTpSYuaNJPbX1NU3JLyscSLjwAQM8bWMhhIlnCqnRvDTw==}
+
+  hls.js@1.5.17:
+    resolution: {integrity: sha512-wA66nnYFvQa1o4DO/BFgLNRKnBTVXpNeldGRBJ2Y0SvFtdwvFKCbqa9zhHoZLoxHhZ+jYsj3aIBkWQQCPNOhMw==}
 
   html-entities@2.3.3:
     resolution: {integrity: sha512-DV5Ln36z34NNTDgnz0EWGBLZENelNAtkiFA4kyNOG2tDI6Mz1uSWiq1wAKdyjnJwyDiDO7Fa2SO1CTxPXL8VxA==}
@@ -3430,6 +3436,8 @@ snapshots:
       hast-util-parse-selector: 4.0.0
       property-information: 6.5.0
       space-separated-tokens: 2.0.2
+
+  hls.js@1.5.17: {}
 
   html-entities@2.3.3: {}
 
