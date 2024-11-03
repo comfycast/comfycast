@@ -1,15 +1,36 @@
-import "vidstack/bundle";
+import {
+  createResource,
+  Switch,
+  Match,
+  Suspense,
+  type Component,
+  Show,
+} from "solid-js";
 
-const Player = () => {
+interface StreamResponse {
+  url: string;
+}
+
+const fetchStream = async (id: string): Promise<StreamResponse> => {
+  const response = await fetch(`http://localhost:8008/stream/${id}`);
+  return response.json();
+};
+
+const Player: Component<{ id: string }> = (props) => {
+  const [stream] = createResource(props.id, fetchStream);
+
   return (
-    <media-player
-      class="max-w-96"
-      title="Sprite Fight"
-      src="https://stream.mux.com/VZtzUzGRv02OhRnZCxcNg49OilvolTqdnFLEqBsTwaxU.m3u8"
-    >
-      <media-provider></media-provider>
-      <media-plyr-layout></media-plyr-layout>
-    </media-player>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Show when={stream.loading}>
+        <p>Loading...</p>
+      </Show>
+      <Switch>
+        <Match when={stream.error}>
+          <span>Error: {stream.error}</span>
+        </Match>
+        <Match when={stream()}>{stream()!.url}</Match>
+      </Switch>
+    </Suspense>
   );
 };
 
