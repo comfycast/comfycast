@@ -1,0 +1,20 @@
+---
+import ky from "ky";
+
+interface Video {
+  name: string;
+  id: string;
+}
+
+const videos: Video[] = await ky(`http://localhost:8008/videos`).json();
+---
+
+<div class="flex flex-col p-5">
+  {
+    videos.map((video) => (
+      <button class="border-1 m-1 h-20 border border-black shadow-sm">
+        {video.name}
+      </button>
+    ))
+  }
+</div>
