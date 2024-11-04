@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
-    "preview": "astro preview",
+    "preview": "deno run --allow-net --allow-read --allow-env ./dist/server/entry.mjs",
     "astro": "astro",
     "format": "prettier --check .",
     "format:fix": "prettier --write --list-different ."
@@ -14,6 +14,7 @@
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/tailwind": "^5.1.2",
+    "@deno/astro-adapter": "^0.1.4",
     "astro": "^4.16.8",
     "hls.js": "^1.5.17",
     "ky": "^1.7.2",
