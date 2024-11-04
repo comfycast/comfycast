@@ -1,6 +1,10 @@
 ---
 import ky from "ky";
 
+interface Props {
+  id: string;
+}
+
 const { id } = Astro.props;
 
 interface StreamResponse {
@@ -8,7 +12,7 @@ interface StreamResponse {
 }
 
 const stream: StreamResponse = await ky(
-  `http://localhost:8008/stream/${id}`,
+  `http://localhost:8008/stream/${id}`
 ).json();
 ---
 
