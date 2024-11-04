@@ -59,7 +59,7 @@
         "npm:@astrojs/check@~0.9.4",
         "npm:@astrojs/tailwind@^5.1.2",
         "npm:@deno/astro-adapter@~0.1.4",
-        "npm:astro@^4.16.8",
+        "npm:astro@^4.16.9",
         "npm:hls.js@^1.5.17",
         "npm:ky@^1.7.2",
         "npm:prettier-plugin-astro@~0.14.1",
