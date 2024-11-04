@@ -1,0 +1,24 @@
+---
+import ky from "ky";
+
+const { id } = Astro.props;
+
+interface StreamResponse {
+  url: string;
+}
+
+const stream: StreamResponse = await ky(
+  `http://localhost:8008/stream/${id}`,
+).json();
+---
+
+<video data-src={stream.url} class="h-200" controls></video>
+<script>
+  import HLS from "hls.js";
+
+  const video = document.querySelector("video")!;
+
+  const hls = new HLS();
+  hls.loadSource(video.dataset.src!);
+  hls.attachMedia(video);
+</script>
