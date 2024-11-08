@@ -1,13 +1,12 @@
-import { defineConfig, passthroughImageService } from "astro/config";
+import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
-import deno from "@deno/astro-adapter";
+import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
   output: "server",
-  adapter: deno(),
+  adapter: node({
+    mode: "middleware",
+  }),
   integrations: [tailwind()],
-  image: {
-    service: passthroughImageService(),
-  },
 });
