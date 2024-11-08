@@ -12,7 +12,7 @@ interface StreamResponse {
 }
 
 const stream: StreamResponse = await ky(
-  `http://localhost:8008/stream/${id}`
+  `http://localhost:8008/stream/${id}`,
 ).json();
 ---
 
