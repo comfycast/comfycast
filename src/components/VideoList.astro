@@ -9,12 +9,15 @@ interface Video {
 const videos: Video[] = await ky(`http://localhost:8008/videos`).json();
 ---
 
-<div class="flex flex-col p-5">
+<div class="flex">
   {
     videos.map((video) => (
-      <button class="border-1 m-1 h-20 border border-black shadow-sm">
+      <a
+        class="border-1 m-1 min-w-fit border border-black shadow-sm"
+        href={`/watch/${video.id}`}
+      >
         {video.name}
-      </button>
+      </a>
     ))
   }
 </div>
