@@ -1,4 +1,7 @@
 ---
+import "vidstack/player/styles/base.css";
+import "vidstack/player/styles/plyr/theme.css";
+
 interface Props {
   id: string;
 }
@@ -8,13 +11,12 @@ const { id } = Astro.props;
 const src = `http://localhost:8008/stream/${id}/master.m3u8`;
 ---
 
-<video data-src={src} class="h-200" controls></video>
+<media-player src={src}>
+  <media-provider></media-provider>
+  <media-plyr-layout></media-plyr-layout>
+</media-player>
 <script>
-  import HLS from "hls.js";
-
-  const video = document.querySelector("video")!;
-
-  const hls = new HLS();
-  hls.loadSource(video.dataset.src!);
-  hls.attachMedia(video);
+  import "vidstack/player";
+  import "vidstack/player/layouts/plyr";
+  import "vidstack/player/ui";
 </script>
