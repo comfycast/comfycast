@@ -1,22 +1,14 @@
 ---
-import ky from "ky";
-
 interface Props {
   id: string;
 }
 
 const { id } = Astro.props;
 
-interface StreamResponse {
-  url: string;
-}
-
-const stream: StreamResponse = await ky(
-  `http://localhost:8008/stream/${id}`,
-).json();
+const src = `http://localhost:8008/stream/${id}/master.m3u8`;
 ---
 
-<video data-src={stream.url} class="h-200" controls></video>
+<video data-src={src} class="h-200" controls></video>
 <script>
   import HLS from "hls.js";
 
