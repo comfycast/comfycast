@@ -16,6 +16,7 @@
     "@astrojs/node": "^8.3.4",
     "@astrojs/solid-js": "^4.4.3",
     "@astrojs/tailwind": "^5.1.2",
+    "@playform/compress": "^0.1.6",
     "astro": "^4.16.13",
     "hls.js": "^1.5.17",
     "ky": "^1.7.2",
