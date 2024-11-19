@@ -27,5 +27,5 @@
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.8"
   },
-  "packageManager": "pnpm@10.0.0-alpha.0+sha512.856941ef22665d2f3e41c04e8d86ed757ef057fb2bc35011698bfa988ef5817cc1cdd28bb883e7f23f0568c75de5544d4750211d4276b9ba6d55369eb207a549"
+  "packageManager": "pnpm@9.13.2+sha512.88c9c3864450350e65a33587ab801acf946d7c814ed1134da4a924f6df5a2120fd36b46aab68f7cd1d413149112d53c7db3a4136624cfd00ff1846a0c6cef48a"
 }
