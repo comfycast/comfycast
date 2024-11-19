@@ -1,5 +1,7 @@
 # Comfycast
 
+Comfycast is a simple but powerful self hosted media center.
+
 ## License
 
 This project is licensed under the
