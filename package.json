@@ -14,10 +14,12 @@
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/node": "^8.3.4",
+    "@astrojs/solid-js": "^4.4.3",
     "@astrojs/tailwind": "^5.1.2",
     "astro": "^4.16.13",
     "hls.js": "^1.5.17",
     "ky": "^1.7.2",
+    "solid-js": "^1.9.3",
     "tailwindcss": "^3.4.15",
     "typescript": "^5.6.3",
     "vidstack": "^1.12.12"
