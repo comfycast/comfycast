@@ -1,4 +1,4 @@
-import { defineConfig } from "astro/config";
+import { defineConfig, envField } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import node from "@astrojs/node";
 import solidJs from "@astrojs/solid-js";
@@ -11,4 +11,15 @@ export default defineConfig({
     mode: "standalone",
   }),
   integrations: [tailwind(), solidJs(), playformCompress()],
+  experimental: {
+    env: {
+      schema: {
+        API_URL: envField.string({
+          context: "client",
+          access: "public",
+          default: "http://localhost:8008",
+        }),
+      },
+    },
+  },
 });
