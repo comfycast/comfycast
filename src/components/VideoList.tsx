@@ -1,6 +1,7 @@
 import ky from "ky";
 import { createResource, For, type Component } from "solid-js";
 import { navigate } from "astro:transitions/client";
+import { API_URL } from "astro:env/client";
 
 interface VideoButtonProps {
   name: string;
@@ -14,7 +15,7 @@ interface StreamResponse {
 const VideoButton: Component<VideoButtonProps> = ({ name, id }) => {
   const handleClick = async () => {
     const res: StreamResponse = await ky(
-      `http://localhost:8008/stream/create/${id}`,
+      `${API_URL}/stream/create/${id}`,
     ).json();
 
     navigate(`/stream/${res.id}`);
@@ -37,7 +38,7 @@ interface Video {
 
 const VideoList = () => {
   const [videos] = createResource(() =>
-    ky(`http://localhost:8008/videos`).json<Video[]>(),
+    ky(`${API_URL}/videos`).json<Video[]>(),
   );
 
   return (

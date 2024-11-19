@@ -1,6 +1,7 @@
 ---
 import "vidstack/player/styles/base.css";
 import "vidstack/player/styles/plyr/theme.css";
+import { API_URL } from "astro:env/client";
 
 interface Props {
   id: string;
@@ -8,7 +9,7 @@ interface Props {
 
 const { id } = Astro.props;
 
-const src = `http://localhost:8008/stream/${id}/master.m3u8`;
+const src = `${API_URL}/stream/${id}/master.m3u8`;
 ---
 
 <media-player src={src}>
