@@ -9,6 +9,7 @@ import "@scalar/api-reference/style.css";
       spec: {
         url: 'https://cdn.jsdelivr.net/npm/@scalar/galaxy/dist/latest.yaml',
       },
+      hideClientButton: true,
     }"
   />
 </template>
