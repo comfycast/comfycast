@@ -15,14 +15,14 @@
     "@astrojs/node": "^9.0.0",
     "@astrojs/solid-js": "^5.0.1",
     "@astrojs/tailwind": "^5.1.4",
-    "@astrojs/vue": "^5.0.3",
-    "@scalar/api-reference": "^1.25.99",
-    "astro": "^5.1.1",
+    "@astrojs/vue": "^5.0.4",
+    "@scalar/api-reference": "^1.25.101",
+    "astro": "^5.1.5",
     "hls.js": "^1.5.18",
     "ky": "^1.7.4",
-    "solid-js": "^1.9.3",
+    "solid-js": "^1.9.4",
     "tailwindcss": "^3.4.17",
-    "typescript": "^5.7.2",
+    "typescript": "^5.7.3",
     "vidstack": "^1.12.12",
     "vue": "^3.5.13"
   },
@@ -31,5 +31,5 @@
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.9"
   },
-  "packageManager": "pnpm@9.15.2+sha512.93e57b0126f0df74ce6bff29680394c0ba54ec47246b9cf321f0121d8d9bb03f750a705f24edc3c1180853afd7c2c3b94196d0a3d53d3e069d9e2793ef11f321"
+  "packageManager": "pnpm@9.15.3+sha512.1f79bc245a66eb0b07c5d4d83131240774642caaa86ef7d0434ab47c0d16f66b04e21e0c086eb61e62c77efc4d7f7ec071afad3796af64892fae66509173893a"
 }
