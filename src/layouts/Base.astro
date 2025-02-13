@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
 
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 
 const title = "Comfycast";
 const description = "comfycast is very cool";
@@ -38,7 +38,7 @@ const description = "comfycast is very cool";
     <!-- <meta property="twitter:image" content={new URL(image, Astro.url)} /> -->
 
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <ViewTransitions />
+    <ClientRouter />
   </head>
   <body class="h-screen">
     <main class="h-full">
