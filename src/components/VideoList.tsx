@@ -24,7 +24,7 @@ const VideoButton: Component<VideoButtonProps> = ({ name, id }) => {
   return (
     <button
       onClick={handleClick}
-      class="border-1 m-1 border border-black shadow-sm"
+      class="m-1 border border-1 border-black shadow-sm"
     >
       {name}
     </button>

@@ -12,33 +12,34 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/node": "^9.0.0",
-    "@astrojs/solid-js": "^5.0.1",
-    "@astrojs/tailwind": "^5.1.4",
-    "@astrojs/vue": "^5.0.4",
-    "@scalar/api-reference": "^1.25.101",
-    "astro": "^5.1.5",
-    "hls.js": "^1.5.18",
-    "ky": "^1.7.4",
+    "@astrojs/node": "^9.0.3",
+    "@astrojs/solid-js": "^5.0.4",
+    "@astrojs/vue": "^5.0.6",
+    "@scalar/api-reference": "^1.25.116",
+    "@tailwindcss/vite": "^4.0.6",
+    "astro": "^5.2.6",
+    "hls.js": "^1.5.20",
+    "ky": "^1.7.5",
     "solid-js": "^1.9.4",
-    "tailwindcss": "^3.4.17",
+    "tailwindcss": "^4.0.6",
     "typescript": "^5.7.3",
     "vidstack": "^1.12.12",
     "vue": "^3.5.13"
   },
   "devDependencies": {
-    "prettier": "^3.4.2",
+    "prettier": "^3.5.0",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.6.9"
+    "prettier-plugin-tailwindcss": "^0.6.11"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild",
-      "vue-demi"
+      "vue-demi",
+      "sharp"
     ]
   },
   "volta": {
     "node": "22.14.0"
   },
-  "packageManager": "pnpm@10.0.0+sha512.b8fef5494bd3fe4cbd4edabd0745df2ee5be3e4b0b8b08fa643aa3e4c6702ccc0f00d68fa8a8c9858a735a0032485a44990ed2810526c875e416f001b17df12b"
+  "packageManager": "pnpm@10.3.0"
 }
