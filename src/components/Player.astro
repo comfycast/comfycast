@@ -1,6 +1,4 @@
 ---
-import 'vidstack/player/styles/base.css';
-import 'vidstack/player/styles/plyr/theme.css';
 import { API_URL } from 'astro:env/client';
 
 interface Props {
@@ -12,12 +10,14 @@ const { id } = Astro.props;
 const src = `${API_URL}/stream/${id}/master.m3u8`;
 ---
 
-<media-player src={src}>
-	<media-provider></media-provider>
-	<media-plyr-layout></media-plyr-layout>
-</media-player>
+<video-player>
+	<video-minimal-skin>
+		<hlsjs-video src={src} playsinline></hlsjs-video>
+	</video-minimal-skin>
+</video-player>
+
 <script>
-	import 'vidstack/player';
-	import 'vidstack/player/layouts/plyr';
-	import 'vidstack/player/ui';
+	import '@videojs/html/video/player';
+	import '@videojs/html/video/minimal-skin';
+	import '@videojs/html/media/hlsjs-video';
 </script>
