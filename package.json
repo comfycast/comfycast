@@ -1,53 +1,54 @@
 {
-  "name": "website",
-  "type": "module",
-  "version": "0.0.1",
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "12.3.1",
-      "onFail": "download"
-    },
-    "runtime": [
-      {
-        "name": "deno",
-        "version": "2",
-        "onFail": "download"
-      },
-      {
-        "name": "node",
-        "version": "24.20.0",
-        "onFail": "download"
-      }
-    ]
-  },
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "format": "prettier --check .",
-    "format:fix": "prettier --write --list-different ."
-  },
-  "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "@astrojs/node": "^9.0.3",
-    "@astrojs/solid-js": "^5.0.4",
-    "@astrojs/vue": "^5.0.6",
-    "@scalar/api-reference": "^1.25.116",
-    "@tailwindcss/vite": "^4.0.6",
-    "astro": "^5.2.6",
-    "hls.js": "^1.5.20",
-    "ky": "^1.7.5",
-    "solid-js": "^1.9.4",
-    "tailwindcss": "^4.0.6",
-    "typescript": "^5.7.3",
-    "vidstack": "^1.12.12",
-    "vue": "^3.5.13"
-  },
-  "devDependencies": {
-    "prettier": "^3.5.0",
-    "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.6.11"
-  }
+	"name": "comfycast",
+	"type": "module",
+	"version": "0.0.1",
+	"devEngines": {
+		"packageManager": {
+			"name": "pnpm",
+			"version": "12.3.1",
+			"onFail": "download"
+		},
+		"runtime": [
+			{
+				"name": "deno",
+				"version": "2",
+				"onFail": "download"
+			},
+			{
+				"name": "node",
+				"version": "24.20.0",
+				"onFail": "download"
+			}
+		]
+	},
+	"scripts": {
+		"dev": "astro dev",
+		"build": "astro check && astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"format": "prettier --check .",
+		"format:fix": "prettier --write --list-different ."
+	},
+	"dependencies": {
+		"@astrojs/node": "^11.1.5",
+		"@astrojs/solid-js": "^7.0.2",
+		"@astrojs/vue": "^7.0.2",
+		"@scalar/api-reference": "^1.67.0",
+		"astro": "^7.3.1",
+		"hls.js": "^1.7.2",
+		"ky": "^2.1.0",
+		"solid-js": "^1.9.15",
+		"tailwindcss": "^4.3.3",
+		"vidstack": "^1.12.12",
+		"vue": "^3.5.42"
+	},
+	"devDependencies": {
+		"@astrojs/check": "^0.9.10",
+		"@prettier/plugin-oxc": "^0.2.2",
+		"@tailwindcss/vite": "^4.3.3",
+		"prettier": "^3.9.6",
+		"prettier-plugin-astro": "^0.14.1",
+		"prettier-plugin-tailwindcss": "^0.8.1",
+		"typescript": "^6.0.3"
+	}
 }
