@@ -46,6 +46,7 @@
 		"@astrojs/check": "^0.9.10",
 		"@prettier/plugin-oxc": "^0.2.2",
 		"@tailwindcss/vite": "^4.3.3",
+		"@types/node": "^26.4.1",
 		"prettier": "^3.9.6",
 		"prettier-plugin-astro": "^0.14.1",
 		"prettier-plugin-tailwindcss": "^0.8.1",
