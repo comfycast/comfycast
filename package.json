@@ -32,15 +32,13 @@
 	"dependencies": {
 		"@astrojs/node": "^11.1.5",
 		"@astrojs/solid-js": "^7.0.2",
-		"@astrojs/vue": "^7.0.2",
-		"@scalar/api-reference": "^1.67.0",
+		"@scalar/astro": "^0.4.17",
 		"astro": "^7.3.1",
 		"hls.js": "^1.7.2",
 		"ky": "^2.1.0",
 		"solid-js": "^1.9.15",
 		"tailwindcss": "^4.3.3",
-		"vidstack": "^1.12.12",
-		"vue": "^3.5.42"
+		"vidstack": "^1.12.12"
 	},
 	"devDependencies": {
 		"@astrojs/check": "^0.9.10",

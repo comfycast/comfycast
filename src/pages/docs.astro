@@ -1,8 +1,13 @@
 ---
-import Api from '@/components/Api.vue';
+// import Api from '@/components/Api.vue';
 import Base from '@/layouts/Base.astro';
+import { ScalarComponent } from '@scalar/astro';
 ---
 
 <Base>
-	<Api client:only="vue" />
+	<ScalarComponent
+		configuration={{
+			url: 'https://cdn.jsdelivr.net/npm/@scalar/galaxy/dist/latest.yaml',
+		}}
+	/>
 </Base>

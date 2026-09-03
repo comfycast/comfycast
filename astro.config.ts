@@ -1,7 +1,6 @@
 import { defineConfig, envField } from 'astro/config';
 import node from '@astrojs/node';
 import solidJs from '@astrojs/solid-js';
-import vue from '@astrojs/vue';
 import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
@@ -10,7 +9,7 @@ export default defineConfig({
 	adapter: node({
 		mode: 'standalone',
 	}),
-	integrations: [solidJs(), vue()],
+	integrations: [solidJs()],
 	env: {
 		schema: {
 			API_URL: envField.string({
