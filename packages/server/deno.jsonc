@@ -1,0 +1,3 @@
+{
+	"nodeModulesDir": "manual" // Depedencies are managed by the pnpm workspace
+}

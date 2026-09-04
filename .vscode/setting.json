@@ -1,0 +1,6 @@
+{
+	"deno.enable": false,
+	"deno.enablePaths": ["packages/server"],
+	"deno.config": "packages/server/deno.json",
+	"editor.defaultFormatter": "esbenp.prettier-vscode"
+}

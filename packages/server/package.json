@@ -1,0 +1,14 @@
+{
+	"name": "@comfycast/server",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {},
+	"dependencies": {
+		"@sinclair/typebox": "^0.34.52",
+		"elysia": "^1.4.30",
+		"openapi-types": "^12.1.3"
+	},
+	"devDependencies": {
+		"@types/node": "^26.4.1"
+	}
+}
