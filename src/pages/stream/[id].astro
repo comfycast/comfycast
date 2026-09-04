@@ -1,10 +1,10 @@
 ---
-import Player from '@/components/Player.astro';
+import VideoPlayer from '@/components/VideoPlayer';
 import Base from '@/layouts/Base.astro';
 
 const { id } = Astro.params;
 ---
 
 <Base>
-	<Player id={id!} />
+	<VideoPlayer id={id!} client:load />
 </Base>
