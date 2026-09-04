@@ -2,7 +2,9 @@
 	"name": "@comfycast/server",
 	"type": "module",
 	"version": "0.0.1",
-	"scripts": {},
+	"scripts": {
+		"dev": "deno watch -A main.ts"
+	},
 	"dependencies": {
 		"@sinclair/typebox": "^0.34.52",
 		"elysia": "^1.4.30",
