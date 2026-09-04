@@ -1,0 +1,27 @@
+{
+	"name": "@comfycast/web",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"build": "astro check && astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"@astrojs/node": "^11.1.5",
+		"@astrojs/solid-js": "^7.0.2",
+		"@scalar/astro": "^0.4.17",
+		"@videojs/html": "10.0.0-beta.32",
+		"astro": "^7.3.1",
+		"ky": "^2.1.0",
+		"solid-js": "^1.9.15",
+		"tailwindcss": "^4.3.3"
+	},
+	"devDependencies": {
+		"@astrojs/check": "^0.9.10",
+		"@tailwindcss/vite": "^4.3.3",
+		"@types/node": "^26.4.1",
+		"typescript": "^6.0.3"
+	}
+}

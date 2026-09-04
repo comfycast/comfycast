@@ -1,7 +1,8 @@
 {
-	"name": "comfycast",
+	"name": "root",
 	"type": "module",
-	"version": "0.0.1",
+	"version": "0.0.0",
+	"private": true,
 	"devEngines": {
 		"packageManager": {
 			"name": "pnpm",
@@ -22,31 +23,13 @@
 		]
 	},
 	"scripts": {
-		"dev": "astro dev",
-		"build": "astro check && astro build",
-		"preview": "astro preview",
-		"astro": "astro",
 		"format": "prettier --check .",
 		"format:fix": "prettier --write --list-different ."
 	},
-	"dependencies": {
-		"@astrojs/node": "^11.1.5",
-		"@astrojs/solid-js": "^7.0.2",
-		"@scalar/astro": "^0.4.17",
-		"@videojs/html": "10.0.0-beta.32",
-		"astro": "^7.3.1",
-		"ky": "^2.1.0",
-		"solid-js": "^1.9.15",
-		"tailwindcss": "^4.3.3"
-	},
 	"devDependencies": {
-		"@astrojs/check": "^0.9.10",
 		"@prettier/plugin-oxc": "^0.2.2",
-		"@tailwindcss/vite": "^4.3.3",
-		"@types/node": "^26.4.1",
 		"prettier": "^3.9.6",
 		"prettier-plugin-astro": "^0.14.1",
-		"prettier-plugin-tailwindcss": "^0.8.1",
-		"typescript": "^6.0.3"
+		"prettier-plugin-tailwindcss": "^0.8.1"
 	}
 }
